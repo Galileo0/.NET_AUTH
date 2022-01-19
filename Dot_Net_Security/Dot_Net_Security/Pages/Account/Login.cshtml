@@ -1,0 +1,32 @@
+﻿@page
+@model Dot_Net_Security.Pages.Account.LoginModel
+@{
+}
+
+<div class="container border">
+    <form method="post">
+        <div asp-validation-summary="ModelOnly"></div>
+        <div class="form-group row">
+            <div class="col-3">
+                <label asp-for="Credientails.UserName"></label>
+            </div>
+            <div class="col-5">
+                <input type="text" asp-for="Credientails.UserName" />
+            </div>
+            <span asp-validation-for="Credientails.UserName"></span>
+        </div>
+        <div class="form-group row">
+            <div class="col-3">
+                <label asp-for="Credientails.PassWord"></label>
+            </div>
+            <div class="col-5">
+                <input type="text" asp-for="Credientails.PassWord" />
+            </div>
+            <span asp-validation-for="Credientails.PassWord"></span>
+        </div>
+        <div class="form-group">
+            <input type="submit" class="btn-danger" value="Login" />
+        </div>
+    </form>
+
+</div>
